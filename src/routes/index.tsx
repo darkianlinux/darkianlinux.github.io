@@ -47,8 +47,7 @@ function Index() {
               <span className="ml-3 text-xs mono text-muted-foreground">root@darkian: ~</span>
             </div>
             <pre className="p-5 text-sm mono leading-relaxed">
-<span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> whoami
-<span className="text-muted-foreground">root</span>
+<span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> sudo apt install verytuffapplication
 <span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> <span className="animate-pulse">▍</span>
             </pre>
           </div>
