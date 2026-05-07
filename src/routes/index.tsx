@@ -5,8 +5,8 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "DARKUNTU — The OS for Ethical Hackers" },
-      { name: "description", content: "Dark, fast, and weaponized for security research. DARKUNTU 2026 LTS — for penetration testers and ethical hackers." },
+      { title: "DARKIAN — The OS for Ethical Hackers" },
+      { name: "description", content: "Dark, fast, and weaponized for security research. DARKIAN 2026 LTS — for penetration testers and ethical hackers." },
     ],
   }),
 });
@@ -44,12 +44,12 @@ function Index() {
               <span className="w-3 h-3 rounded-full bg-primary/80" />
               <span className="w-3 h-3 rounded-full bg-muted" />
               <span className="w-3 h-3 rounded-full bg-muted" />
-              <span className="ml-3 text-xs mono text-muted-foreground">root@darkuntu: ~</span>
+              <span className="ml-3 text-xs mono text-muted-foreground">root@darkian: ~</span>
             </div>
             <pre className="p-5 text-sm mono leading-relaxed">
-<span className="text-primary">root@darkuntu</span>:<span className="text-muted-foreground">~#</span> whoami
+<span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> whoami
 <span className="text-muted-foreground">root</span>
-<span className="text-primary">root@darkuntu</span>:<span className="text-muted-foreground">~#</span> <span className="animate-pulse">▍</span>
+<span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> <span className="animate-pulse">▍</span>
             </pre>
           </div>
         </div>
@@ -57,7 +57,7 @@ function Index() {
 
       {/* FEATURES */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl md:text-4xl font-bold mono">Why <span className="text-primary">DARKUNTU</span>?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mono">Why <span className="text-primary">DARKIAN</span>?</h2>
         <p className="mt-3 text-muted-foreground max-w-2xl">Built from the ground up for offensive security. Pre-loaded with 600+ tools.</p>
         <div className="mt-12 grid md:grid-cols-3 gap-5">
           {[
@@ -87,7 +87,7 @@ function Index() {
               <p className="mt-2 text-muted-foreground max-w-xl">For educational purposes only. Use only on systems you own or have explicit permission to test.</p>
             </div>
             <Link to="/download" className="inline-flex items-center gap-2 bg-red-grad text-primary-foreground px-6 py-3 rounded-md font-medium hover:opacity-95">
-              <Download className="w-4 h-4" /> Get DARKUNTU
+              <Download className="w-4 h-4" /> Get DARKIAN
             </Link>
           </div>
         </div>

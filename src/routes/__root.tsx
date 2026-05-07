@@ -56,9 +56,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DARKUNTU — The OS for Ethical Hackers" },
-      { name: "description", content: "DARKUNTU is a fast, dark Linux distribution built for penetration testers, ethical hackers and security researchers. For educational purposes only." },
-      { property: "og:title", content: "DARKUNTU" },
+      { title: "DARKIAN — The OS for Ethical Hackers" },
+      { name: "description", content: "DARKIAN is a fast, dark Linux distribution built for penetration testers, ethical hackers and security researchers. For educational purposes only." },
+      { property: "og:title", content: "DARKIAN" },
       { property: "og:description", content: "The OS for ethical hackers and pentesters." },
       { property: "og:type", content: "website" },
     ],
