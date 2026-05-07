@@ -14,12 +14,16 @@ function permanentTemporarySolution(): PluginOption {
     name: "permanent-temporary-solution",
     apply: "build",
 
-    closeBundle() {
+    writeBundle() {
       const dir = resolve(__dirname, "dist/server");
-      const og = join(dir, "index.js");
-      const dist = join(dir, "server.js");
+      const index = join(dir, "index.js");
+      const server = join(dir, "server.js");
 
-      copyFileSync(og, dist);
+      try {
+        copyFileSync(server, index);
+      } catch {
+        /* empty */
+      }
     },
   };
 }
