@@ -1,5 +1,5 @@
 import { Link, Outlet } from "@tanstack/react-router";
-import { Terminal } from "lucide-react";
+import { DragonLogo } from "./DragonLogo";
 
 export function SiteLayout() {
   return (
