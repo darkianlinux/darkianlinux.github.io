@@ -16,12 +16,10 @@ function permanentTemporarySolution(): PluginOption {
 
     closeBundle() {
       const dist = resolve(__dirname, "dist/server");
-
-      const target = join(dist, "index.js");
       const link = join(dist, "server.js");
 
       rmSync(link, { force: true });
-      symlinkSync(target, link, "file");
+      symlinkSync("./index.js", link);
     },
   };
 }
