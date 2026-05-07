@@ -47,12 +47,6 @@ function AboutPage() {
         </p>
       </div>
 
-      <pre className="mt-12 p-5 rounded-lg border border-border bg-card mono text-xs text-muted-foreground overflow-x-auto">
-{`# Install in 3 commands
-$ wget https://darkuntu.org/iso/darkuntu-2026.04.iso
-$ dd if=darkuntu-2026.04.iso of=/dev/sdX bs=4M status=progress
-$ reboot && enjoy`}
-      </pre>
     </section>
   );
 }

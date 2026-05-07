@@ -29,6 +29,14 @@ export function SiteLayout() {
                 {l.label}
               </Link>
             ))}
+            <a
+              href="https://discord.gg/KTCGUQeJsn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 px-3 py-1.5 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition"
+            >
+              Discord
+            </a>
           </nav>
         </div>
       </header>

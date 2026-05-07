@@ -47,10 +47,8 @@ function Index() {
               <span className="ml-3 text-xs mono text-muted-foreground">root@darkuntu: ~</span>
             </div>
             <pre className="p-5 text-sm mono leading-relaxed">
-<span className="text-primary">root@darkuntu</span>:<span className="text-muted-foreground">~#</span> uname -a
-<span className="text-muted-foreground">Linux darkuntu 6.12-darkuntu #2026 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux</span>
-<span className="text-primary">root@darkuntu</span>:<span className="text-muted-foreground">~#</span> nmap --version
-<span className="text-muted-foreground">Nmap 7.95 ( https://nmap.org )</span>
+<span className="text-primary">root@darkuntu</span>:<span className="text-muted-foreground">~#</span> whoami
+<span className="text-muted-foreground">root</span>
 <span className="text-primary">root@darkuntu</span>:<span className="text-muted-foreground">~#</span> <span className="animate-pulse">▍</span>
             </pre>
           </div>
@@ -65,7 +63,7 @@ function Index() {
           {[
             { icon: Zap, title: "Blazing Fast", text: "Custom kernel patches and zram boot in under 6s on modern hardware." },
             { icon: Shield, title: "Hardened", text: "AppArmor, secure boot, and full-disk LUKS2 encryption by default." },
-            { icon: Terminal, title: "600+ Tools", text: "Nmap, Burp, Metasploit, Wireshark, John, Hashcat — pre-configured." },
+            { icon: Terminal, title: "Light Tools", text: "Curated light tools with full access to the Kali repository." },
             { icon: Cpu, title: "Lightweight", text: "Runs on 2GB RAM. Sleek Hyprland or i3 sessions out of the box." },
             { icon: Lock, title: "Anonymous Mode", text: "One-toggle Tor routing, MAC randomization, and DNS over HTTPS." },
             { icon: Download, title: "Live + Persistent", text: "Boot from USB with optional encrypted persistence." },
