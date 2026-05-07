@@ -16,8 +16,8 @@ function permanentTemporarySolution(): PluginOption {
 
     closeBundle() {
       const dir = resolve(__dirname, "dist/server");
-      const og = join(dir, "server.js");
-      const dist = join(dir, "index.js");
+      const og = join(dir, "index.js");
+      const dist = join(dir, "server.js");
 
       copyFileSync(og, dist);
     },
