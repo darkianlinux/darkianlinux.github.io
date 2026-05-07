@@ -5,11 +5,35 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { rmSync, symlinkSync } from "node:fs";
+import { join, resolve } from "node:path";
+import type { PluginOption } from "vite";
+
+function permanentTemporarySolution(): PluginOption {
+  return {
+    name: "permanent-temporary-solution",
+    apply: "build",
+
+    closeBundle() {
+      const dist = resolve(__dirname, "dist/server");
+
+      const target = join(dist, "index.js");
+      const link = join(dist, "server.js");
+
+      rmSync(link, { force: true });
+      symlinkSync(target, link, "file");
+    },
+  };
+}
 
 // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
 // @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
+  plugins: [permanentTemporarySolution()],
   tanstackStart: {
     server: { entry: "server" },
+  },
+  vite: {
+    base: "/",
   },
 });

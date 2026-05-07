@@ -6,7 +6,11 @@ export const Route = createFileRoute("/download")({
   head: () => ({
     meta: [
       { title: "Download — DARKIAN Nightshade" },
-      { name: "description", content: "Download DARKIAN Desktop — a Live CD with Cinnamon desktop and light tools from the Kali repository." },
+      {
+        name: "description",
+        content:
+          "Download DARKIAN Desktop — a Live CD with Cinnamon desktop and light tools from the Kali repository.",
+      },
     ],
   }),
 });
@@ -18,8 +22,8 @@ function DownloadPage() {
         <p className="text-xs mono text-primary mb-2">// codename — Nightshade</p>
         <h1 className="text-4xl md:text-5xl font-bold mono">Download DARKIAN</h1>
         <p className="mt-4 text-muted-foreground max-w-2xl">
-          A Live CD edition with the Cinnamon desktop, light tools and access to the Kali repository.
-          Boot it, test it, install it.
+          A Live CD edition with the Cinnamon desktop, light tools and access to the Kali
+          repository. Boot it, test it, install it.
         </p>
       </div>
 
@@ -33,7 +37,9 @@ function DownloadPage() {
             </p>
           </div>
           <a
-            href="https://drive.google.com/drive/folders/1AfJLxATXfBTNWszzUnR4ErOr3gJDcyge?usp=drive_link" target="_blank" rel="noopener noreferrer"
+            href="https://drive.google.com/drive/folders/1AfJLxATXfBTNWszzUnR4ErOr3gJDcyge?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium bg-red-grad text-primary-foreground hover:opacity-95"
           >
             <Download className="w-4 h-4" /> Direct download
@@ -43,7 +49,11 @@ function DownloadPage() {
 
       <div className="mt-16 grid md:grid-cols-2 gap-5">
         {[
-          { icon: HardDrive, title: "20 GB disk", text: "Recommended free disk space for a full install with light tools." },
+          {
+            icon: HardDrive,
+            title: "20 GB disk",
+            text: "Recommended free disk space for a full install with light tools.",
+          },
           { icon: Cpu, title: "2 GB RAM", text: "Minimum. 8 GB recommended for heavy workloads." },
         ].map((s, i) => (
           <div key={i} className="rounded-lg border border-border bg-card p-5">
@@ -58,8 +68,8 @@ function DownloadPage() {
         <p className="mono text-primary">⚠ EDUCATIONAL USE ONLY</p>
         <p className="text-muted-foreground mt-2">
           DARKIAN and its bundled light tools are intended exclusively for learning, authorized
-          penetration testing, and ethical security research. Unauthorized access to systems
-          you do not own is illegal.
+          penetration testing, and ethical security research. Unauthorized access to systems you do
+          not own is illegal.
         </p>
       </div>
     </section>
