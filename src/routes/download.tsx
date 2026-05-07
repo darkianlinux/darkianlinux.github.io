@@ -33,7 +33,7 @@ function DownloadPage() {
             </p>
           </div>
           <a
-            href="#"
+            href="https://drive.google.com/drive/folders/1AfJLxATXfBTNWszzUnR4ErOr3gJDcyge?usp=drive_link" target="_blank" rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium bg-red-grad text-primary-foreground hover:opacity-95"
           >
             <Download className="w-4 h-4" /> Direct download
