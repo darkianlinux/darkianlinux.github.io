@@ -48,9 +48,9 @@ export function SiteLayout() {
       <footer className="border-t border-border/60 mt-20">
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs mono text-muted-foreground">
           <div>
-            <span className="text-primary">$</span> darkuntu --version 2026.04 LTS
+            <span className="text-primary">$</span> darkian --version 2026.04 LTS
           </div>
-          <div>© DARKUNTU 2026 — For educational use only.</div>
+          <div>© DARKIAN 2026 — For educational use only.</div>
         </div>
       </footer>
     </div>

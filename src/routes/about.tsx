@@ -5,8 +5,8 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About — DARKUNTU" },
-      { name: "description", content: "DARKUNTU is built for ethical hackers, penetration testers, and security education. Learn about our mission." },
+      { title: "About — DARKIAN" },
+      { name: "description", content: "DARKIAN is built for ethical hackers, penetration testers, and security education. Learn about our mission." },
     ],
   }),
 });
@@ -17,7 +17,7 @@ function AboutPage() {
       <p className="text-xs mono text-primary mb-2">// about</p>
       <h1 className="text-4xl md:text-5xl font-bold mono">For hackers who do it right.</h1>
       <p className="mt-6 text-lg text-muted-foreground">
-        DARKUNTU is a community-driven Linux distribution built for one purpose:
+        DARKIAN is a community-driven Linux distribution built for one purpose:
         empowering <span className="text-foreground">ethical hackers</span>,
         <span className="text-foreground"> penetration testers</span> and
         <span className="text-foreground"> security students</span> with a fast,
@@ -41,9 +41,9 @@ function AboutPage() {
       <div className="mt-12 rounded-lg border border-primary/40 bg-primary/5 p-6">
         <h2 className="text-xl font-bold mono text-primary">Disclaimer</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          DARKUNTU is provided strictly for educational purposes and authorized security testing.
+          DARKIAN is provided strictly for educational purposes and authorized security testing.
           Any use of these tools against systems without explicit, written permission is illegal
-          and not endorsed by the DARKUNTU project.
+          and not endorsed by the DARKIAN project.
         </p>
       </div>
 

@@ -34,7 +34,7 @@
 
 :root {
   --radius: 0.5rem;
-  /* Dark by default — DARKUNTU */
+  /* Dark by default — DARKIAN */
   --background: oklch(0.14 0.01 20);
   --foreground: oklch(0.96 0.01 20);
   --card: oklch(0.18 0.012 20);
