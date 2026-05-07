@@ -5,7 +5,7 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-import { rmSync, symlinkSync } from "node:fs";
+import { copyFileSync, rmSync, symlinkSync } from "node:fs";
 import { join, resolve } from "node:path";
 import type { PluginOption } from "vite";
 
@@ -15,11 +15,11 @@ function permanentTemporarySolution(): PluginOption {
     apply: "build",
 
     closeBundle() {
-      const dist = resolve(__dirname, "dist/server");
-      const link = join(dist, "server.js");
+      const dir = resolve(__dirname, "dist/server");
+      const og = join(dir, "server.js");
+      const dist = join(dir, "index.js");
 
-      rmSync(link, { force: true });
-      symlinkSync("./index.js", link);
+      copyFileSync(og, dist);
     },
   };
 }
