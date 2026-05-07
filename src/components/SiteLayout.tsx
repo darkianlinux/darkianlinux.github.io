@@ -30,7 +30,7 @@ export function SiteLayout() {
               </Link>
             ))}
             <a
-              href="https://discord.gg/KTCGUQeJsn"
+              href="https://discord.gg/f97Ecduk9u"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-3 py-1.5 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition"

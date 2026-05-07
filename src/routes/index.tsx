@@ -23,7 +23,7 @@ function Index() {
             v2026.04 LTS — codename "Nightshade"
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mono">
-            DARK<span className="text-primary text-glow">UNTU</span>
+            DARK<span className="text-primary text-glow">IAN</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground">
             The Linux distribution forged for <span className="text-foreground">penetration testers</span>,
