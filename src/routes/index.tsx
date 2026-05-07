@@ -6,7 +6,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "DARKIAN — The OS for Ethical Hackers" },
-      { name: "description", content: "Dark, fast, and weaponized for security research. DARKIAN 2026 LTS — for penetration testers and ethical hackers." },
+      {
+        name: "description",
+        content:
+          "Dark, fast, and weaponized for security research. DARKIAN 2026 LTS — for penetration testers and ethical hackers.",
+      },
     ],
   }),
 });
@@ -26,15 +30,22 @@ function Index() {
             DARK<span className="text-primary text-glow">IAN</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground">
-            The Linux distribution forged for <span className="text-foreground">penetration testers</span>,
+            The Linux distribution forged for{" "}
+            <span className="text-foreground">penetration testers</span>,
             <span className="text-foreground"> ethical hackers</span>, and security researchers.
             Faster than Kali. Lighter than Ubuntu. Made for the terminal.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <Link to="/download" className="inline-flex items-center gap-2 bg-red-grad text-primary-foreground px-6 py-3 rounded-md font-medium shadow-glow hover:opacity-95 transition">
+            <Link
+              to="/download"
+              className="inline-flex items-center gap-2 bg-red-grad text-primary-foreground px-6 py-3 rounded-md font-medium shadow-glow hover:opacity-95 transition"
+            >
               <Download className="w-4 h-4" /> Download 2026.04
             </Link>
-            <Link to="/compare" className="inline-flex items-center gap-2 border border-border px-6 py-3 rounded-md font-medium hover:border-primary hover:text-primary transition">
+            <Link
+              to="/compare"
+              className="inline-flex items-center gap-2 border border-border px-6 py-3 rounded-md font-medium hover:border-primary hover:text-primary transition"
+            >
               See the comparison <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -47,8 +58,11 @@ function Index() {
               <span className="ml-3 text-xs mono text-muted-foreground">root@darkian: ~</span>
             </div>
             <pre className="p-5 text-sm mono leading-relaxed">
-<span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> sudo apt install verytuffapplication
-<span className="text-primary">root@darkian</span>:<span className="text-muted-foreground">~#</span> <span className="animate-pulse">▍</span>
+              <span className="text-primary">root@darkian</span>:
+              <span className="text-muted-foreground">~#</span> sudo apt install verytuffapplication
+              <span className="text-primary">root@darkian</span>:
+              <span className="text-muted-foreground">~#</span>{" "}
+              <span className="animate-pulse">▍</span>
             </pre>
           </div>
         </div>
@@ -56,18 +70,49 @@ function Index() {
 
       {/* FEATURES */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl md:text-4xl font-bold mono">Why <span className="text-primary">DARKIAN</span>?</h2>
-        <p className="mt-3 text-muted-foreground max-w-2xl">Built from the ground up for offensive security. Pre-loaded with 600+ tools.</p>
+        <h2 className="text-3xl md:text-4xl font-bold mono">
+          Why <span className="text-primary">DARKIAN</span>?
+        </h2>
+        <p className="mt-3 text-muted-foreground max-w-2xl">
+          Built from the ground up for offensive security. Pre-loaded with 600+ tools.
+        </p>
         <div className="mt-12 grid md:grid-cols-3 gap-5">
           {[
-            { icon: Zap, title: "Blazing Fast", text: "Custom kernel patches and zram boot in under 6s on modern hardware." },
-            { icon: Shield, title: "Hardened", text: "AppArmor, secure boot, and full-disk LUKS2 encryption by default." },
-            { icon: Terminal, title: "Light Tools", text: "Curated light tools with full access to the Kali repository." },
-            { icon: Cpu, title: "Lightweight", text: "Runs on 2GB RAM. Sleek Hyprland or i3 sessions out of the box." },
-            { icon: Lock, title: "Anonymous Mode", text: "One-toggle Tor routing, MAC randomization, and DNS over HTTPS." },
-            { icon: Download, title: "Live + Persistent", text: "Boot from USB with optional encrypted persistence." },
+            {
+              icon: Zap,
+              title: "Blazing Fast",
+              text: "Custom kernel patches and zram boot in under 6s on modern hardware.",
+            },
+            {
+              icon: Shield,
+              title: "Hardened",
+              text: "AppArmor, secure boot, and full-disk LUKS2 encryption by default.",
+            },
+            {
+              icon: Terminal,
+              title: "Light Tools",
+              text: "Curated light tools with full access to the Kali repository.",
+            },
+            {
+              icon: Cpu,
+              title: "Lightweight",
+              text: "Runs on 2GB RAM. Sleek Hyprland or i3 sessions out of the box.",
+            },
+            {
+              icon: Lock,
+              title: "Anonymous Mode",
+              text: "One-toggle Tor routing, MAC randomization, and DNS over HTTPS.",
+            },
+            {
+              icon: Download,
+              title: "Live + Persistent",
+              text: "Boot from USB with optional encrypted persistence.",
+            },
           ].map((f, i) => (
-            <div key={i} className="group rounded-lg border border-border bg-card p-6 hover:border-primary/60 transition shadow-card">
+            <div
+              key={i}
+              className="group rounded-lg border border-border bg-card p-6 hover:border-primary/60 transition shadow-card"
+            >
               <f.icon className="w-6 h-6 text-primary mb-4 group-hover:scale-110 transition" />
               <h3 className="font-semibold mono">{f.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{f.text}</p>
@@ -83,9 +128,15 @@ function Index() {
           <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mono">Ready to go dark?</h3>
-              <p className="mt-2 text-muted-foreground max-w-xl">For educational purposes only. Use only on systems you own or have explicit permission to test.</p>
+              <p className="mt-2 text-muted-foreground max-w-xl">
+                For educational purposes only. Use only on systems you own or have explicit
+                permission to test.
+              </p>
             </div>
-            <Link to="/download" className="inline-flex items-center gap-2 bg-red-grad text-primary-foreground px-6 py-3 rounded-md font-medium hover:opacity-95">
+            <Link
+              to="/download"
+              className="inline-flex items-center gap-2 bg-red-grad text-primary-foreground px-6 py-3 rounded-md font-medium hover:opacity-95"
+            >
               <Download className="w-4 h-4" /> Get DARKIAN
             </Link>
           </div>
